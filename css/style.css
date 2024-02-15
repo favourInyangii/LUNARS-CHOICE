@@ -109,7 +109,7 @@ footer .p{
 }
 @media (max-width: 991px) {
     .navbar{
-        padding: 50px;
+        padding: 10px;
         align-content: first baseline;
     }
     .navbar ul li{
@@ -119,7 +119,7 @@ footer .p{
         padding-left: none;
         font-size: 30px;
         cursor: pointer;
-        padding-right: 50px;
+        padding-right: 40px;
     }
     .banner{
         flex-direction: column;
