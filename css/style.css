@@ -4,7 +4,7 @@
 }
 .banner{
     width: 100%;
-    height: 100vh;
+    min-height:100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../res/Iwuk\ edesi.jpeg);
     background-size: cover;
     background-position: center;
@@ -86,28 +86,88 @@ footer{
     width: 100%;
 position: absolute;
 top: 84%;
+background-color: gold;
 text-align: center;
-color: #fff;
+color: #191919;
 justify-content: space-between;
+font-weight: bold;
 }
 footer .p{
-    padding-top: 15px;
+    padding-top: 10px;
+    color: #191919;
+    font-weight: bold;
 }
 .social a{
-    color: gold;
-    font-size: 13px;
+    justify-content: space-between;
+    color: #191919;
+    font-size: 20px;
 }
 .social a:hover{
     transform: scale(1.1);
     transition: .3s;
-    color: white;
+    color: blue;
 }
 @media (max-width: 991px) {
-    navbar{
-        padding: 10px;
+    .navbar{
+        padding: 50px;
+        align-content: first baseline;
     }
-    .navbar .logo{
-        font-size: 20px;
+    .navbar ul li{
+        display: list-item;
+    }
+    .logo{
+        padding-left: none;
+        font-size: 30px;
+        cursor: pointer;
         padding-right: 50px;
     }
+    .banner{
+        flex-direction: column;
+    }
+    .banner .content{
+        margin-bottom: 40px;
+    }
+    .content h1{
+        font-size: 300%;
+    }
+    .content p{
+        margin: 30px auto;
+        font-weight: 70;
+        line-height: 20px;
+    }
+    .banner .content,
+    button
+    {
+        width: 100%;
+    }
+    button{
+       margin: 100%;
+    
+    }
+    footer{
+        display: none;
+        top: 100%;
+    }
+}
+@media (max-width: 550px){
+    .navbar ul li{
+        margin: 5 0px;
+        display: list-item;
+       align-content: last baseline;
+    }
+    .banner{
+    width: 100vw;
+background-position: right;}
+.content{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
 }
