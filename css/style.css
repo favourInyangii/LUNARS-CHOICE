@@ -107,9 +107,22 @@ footer .p{
     transition: .3s;
     color: blue;
 }
+.clearfix{
+    background: url(../res/Mini\ Lemon\ Meringue\ Tartlets\ \(Tartelettes\ Citron\ Meringuée\)\ -\ Baker\ Street\ Society.jpeg);
+    background-size: cover;
+    
+}
+.clearfix{
+    padding: 50px 100px;
+    
+min-height: 100vh;
+flex-direction: column;
+background: url(../res/download\ \(4\).jpeg);
+background-size: cover;
+}
 @media (max-width: 991px) {
     .navbar{
-        padding: 10px;
+        padding: 5px;
         align-content: first baseline;
     }
     .navbar ul li{
@@ -147,6 +160,18 @@ footer .p{
     footer{
         display: none;
         top: 100%;
+    }
+    .clearfix{
+        padding: 50px;
+    }
+    .col-md-6{
+        flex-direction: row;
+    }
+    .col-md-6 .fs-5{
+        margin-bottom: 40px;
+    }
+    .clearfix .col-md-6 .fs-5{
+        width: 100%;
     }
 }
 @media (max-width: 550px){
