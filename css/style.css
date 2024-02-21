@@ -163,12 +163,13 @@ background-size: cover;
     }
     .clearfix{
         padding: 50px;
+        align-items: center;
     }
-    .col-md-6{
+    col-md-6{
         flex-direction: row;
     }
     .col-md-6 .fs-5{
-        margin-bottom: 40px;
+        margin-bottom: 4px;
     }
     .clearfix .col-md-6 .fs-5{
         width: 100%;
